@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConstraintLayout2</string>
+
+    <string name="position_proportion" translatable="false">%1$dpx (%2$.3f)</string>
+</resources>

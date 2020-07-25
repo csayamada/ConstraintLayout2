@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/viewControlled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        android:background="@color/colorAccent"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/viewControlled"
+        app:layout_constraintEnd_toEndOf="@id/viewControlled"
+        android:src="@drawable/arrow_up" />
+
+    <View
+        android:id="@+id/arrowTop"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewControlled"
+        app:layout_constraintStart_toStartOf="@id/viewControlled"
+        app:layout_constraintEnd_toEndOf="@id/viewControlled"
+        android:layout_marginVertical="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txtTopHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/arrowTop"
+        app:layout_constraintBottom_toBottomOf="@id/arrowTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/arrowTop"
+        android:gravity="end"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        tools:text="300 (0.2)" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/viewControlled"
+        app:layout_constraintStart_toStartOf="@id/viewControlled"
+        app:layout_constraintEnd_toEndOf="@id/viewControlled"
+        android:src="@drawable/arrow_down" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="@id/viewControlled"
+        app:layout_constraintBottom_toBottomOf="@id/viewControlled"
+        app:layout_constraintEnd_toStartOf="@id/viewControlled"
+        android:src="@drawable/arrow_right" />
+
+    <View
+        android:id="@+id/arrowLeft"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        app:layout_constraintTop_toTopOf="@id/viewControlled"
+        app:layout_constraintBottom_toBottomOf="@id/viewControlled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/viewControlled"
+        android:layout_marginHorizontal="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txtLeftWidth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/arrowLeft"
+        app:layout_constraintStart_toStartOf="@id/arrowLeft"
+        app:layout_constraintEnd_toEndOf="@id/arrowLeft"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        tools:text="500 (0.6)" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="@id/viewControlled"
+        app:layout_constraintBottom_toBottomOf="@id/viewControlled"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/arrow_left" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/viewControlled"
+        app:layout_constraintStart_toStartOf="@id/viewControlled"
+        app:layout_constraintEnd_toEndOf="@id/viewControlled"
+        android:src="@drawable/arrow_up" />
+
+    <View
+        android:id="@+id/arrowBottom"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/viewControlled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/viewControlled"
+        app:layout_constraintEnd_toEndOf="@id/viewControlled"
+        android:layout_marginVertical="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txtBottomHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/arrowBottom"
+        app:layout_constraintBottom_toBottomOf="@id/arrowBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/arrowBottom"
+        android:gravity="end"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        tools:text="800 (0.9)" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/viewControlled"
+        app:layout_constraintEnd_toEndOf="@id/viewControlled"
+        android:src="@drawable/arrow_down" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="@id/viewControlled"
+        app:layout_constraintBottom_toBottomOf="@id/viewControlled"
+        app:layout_constraintStart_toEndOf="@id/viewControlled"
+        android:src="@drawable/arrow_left" />
+
+    <View
+        android:id="@+id/arrowRight"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        app:layout_constraintTop_toTopOf="@id/viewControlled"
+        app:layout_constraintBottom_toBottomOf="@id/viewControlled"
+        app:layout_constraintStart_toEndOf="@id/viewControlled"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txtRightWidth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/arrowRight"
+        app:layout_constraintStart_toStartOf="@id/arrowRight"
+        app:layout_constraintEnd_toEndOf="@id/arrowRight"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        tools:text="200 (0.3)" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="@id/viewControlled"
+        app:layout_constraintBottom_toBottomOf="@id/viewControlled"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/arrow_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
